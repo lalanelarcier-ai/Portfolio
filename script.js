@@ -88,3 +88,19 @@ window.addEventListener('load', () => {
     }, (h1Text.length * 80) + (subtitleText.length * 60) + 600);
   }
 });
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+
+    function closeMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
